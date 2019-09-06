@@ -61,9 +61,9 @@ class Brick{
         ctx.clearRect(this.x,this.y,this.w,this.h);
     }
 }
-let methodSelection = prompt("Please enter which field you want to play. Available options are : 1. Square 2. Ladder. Select 1 or 2");
 let bricks;
 while (!bricks){
+	let methodSelection = prompt("Please enter which field you want to play. Available options are : 1. Square 2. Ladder. Select 1 or 2");
 	if(methodSelection === '1')
 		bricks = draw_bricks_square();
 	else if(methodSelection === '2')
